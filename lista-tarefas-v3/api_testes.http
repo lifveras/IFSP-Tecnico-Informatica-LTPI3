@@ -1,0 +1,25 @@
+GET http://localhost:8080/home
+Content-Type: application/json
+
+###
+POST http://localhost:8080/login/create
+Content-Type: application/json
+
+{
+    "username": "ifsp",
+    "password": "1234",
+    "email": "aluno@ifsp.edu.br"
+}
+
+###
+POST http://localhost:8080/login/auth
+Content-Type: application/json
+
+{
+    "username": "ifsp",
+    "password": "1234"
+}
+
+###
+GET http://localhost:8080/listas
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJpZnNwIiwiZXhwIjoxNjM1MTc4NzkzfQ.iwp0CLbylwHZK-WdtzzqAaaBqf3Zz3O0EyfrrLJukWk

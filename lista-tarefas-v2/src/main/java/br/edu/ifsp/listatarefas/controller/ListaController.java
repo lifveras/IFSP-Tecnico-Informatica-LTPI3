@@ -20,7 +20,7 @@ import br.edu.ifsp.listatarefas.model.Tarefa;
 import br.edu.ifsp.listatarefas.model.TarefaRepository;
 
 @RestController
-public class ListaController {
+class ListaController {
     
     private static final Logger log = LoggerFactory.getLogger(ListaController.class);
 
@@ -83,5 +83,7 @@ public class ListaController {
               return tarefa;
           }
           return null;
-      }    
+      }
+
+    
 }
